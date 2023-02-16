@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b c f"
+    "b c f"
+    "d e f"
+    "g g g";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 100px;
+    gap: 10px;
+    padding: 5px;
+    
+}
+
+#header{
+    grid-area: a;
+}
+
+#sidebar1{
+    grid-area: b;
+}
+#sidebar2{
+    grid-area: c;
+}
+#sidebar3{
+    grid-area: d;
+}
+#sidebar4{
+    grid-area: e;
+}
+#main{
+    grid-area: f;
+}
+#footer{
+    grid-area: g;
+}
